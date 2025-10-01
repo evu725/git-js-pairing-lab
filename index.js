@@ -18,14 +18,26 @@ const multiplesOfThree = () => {
 
     }
 }
-//console.log(multiplesOfThree());
+console.log(multiplesOfThree());
 
 
-const multiplesOfThreeOrFive = () => {
-    for (let i = 3; i <= 100; i++) {
-        if (i % 3 == 0 || i % 5 == 0)
-            console.log(i)
+
+
+
+
+
+//write a funtion untilNum that takes in an integer parameter and console logs all positive numbers from 1 to that integer
+// untilNum(5)    //prints out numbers 1 through 5
+// untilNum(9)    //prints out numbers 1 through 9
+// untilNum(42)   //prints out numbers 1 through 42 //
+const untilNum = (num) => {
+    for (let i = 1; i <= num; i++) {
+        console.log(i)
     }
 }
+console.log(untilNum(5));
+console.log(untilNum(9));
+console.log(untilNum(42));
 
-//console.log(multiplesOfThreeOrFive(20))
+
+a
