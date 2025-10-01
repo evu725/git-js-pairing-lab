@@ -26,15 +26,3 @@ console.log(multiplesOfThree());
 
 
 
-//write a funtion untilNum that takes in an integer parameter and console logs all positive numbers from 1 to that integer
-// untilNum(5)    //prints out numbers 1 through 5
-// untilNum(9)    //prints out numbers 1 through 9
-// untilNum(42)   //prints out numbers 1 through 42 //
-const untilNum = (num) => {
-    for (let i = 1; i <= num; i++) {
-        console.log(i)
-    }
-}
-console.log(untilNum(5));
-console.log(untilNum(9));
-console.log(untilNum(42));      
