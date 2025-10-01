@@ -18,7 +18,7 @@ const multiplesOfThree = () => {
 
     }
 }
-console.log(multiplesOfThree());
+//console.log(multiplesOfThree());
 
 
 
@@ -35,9 +35,36 @@ const untilNum = (num) => {
         console.log(i)
     }
 }
-console.log(untilNum(5));
-console.log(untilNum(9));
-console.log(untilNum(42));
+//console.log(untilNum(5));
+//console.log(untilNum(9));
+//console.log(untilNum(42));
 
 
-a
+const multiply = (num1, num2) => {
+    let multiply = num1 * num2;
+    return multiply
+}
+
+console.log(multiply(2, 4))     //returns 8
+console.log(multiply(10, -5))   //returns -50
+console.log(multiply(3, 7.5))  //returns 22.5
+
+
+
+
+//write a function add that takes in two number parameters
+//  and returns their sum. But if the two values are the same, return triple their sum!
+//add(2, 4)     //returns 6
+//add(10, -5)   //returns 5
+//add(3, 7.5)   //returns 10.5
+//add(5, 5)     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
+//add(6, 6)     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that//
+
+const add = (num1, num2) => {
+    if (num1 === num2) {
+        return (num1 + num2) * 3
+    } else {
+        return num1 + num2
+    }
+
+}
