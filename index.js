@@ -45,9 +45,9 @@ const multiply = (num1, num2) => {
     return multiply
 }
 
-console.log(multiply(2, 4))     //returns 8
-console.log(multiply(10, -5))   //returns -50
-console.log(multiply(3, 7.5))  //returns 22.5
+//console.log(multiply(2, 4))     //returns 8
+//console.log(multiply(10, -5))   //returns -50
+//console.log(multiply(3, 7.5))  //returns 22.5
 
 
 
@@ -68,3 +68,15 @@ const add = (num1, num2) => {
     }
 
 }
+
+const isNegative = (num) => {
+    if (num < 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(isNegative(3))         //returns false
+console.log(isNegative(-2))        //returns true
+console.log(isNegative(Math.PI))   //returns false
