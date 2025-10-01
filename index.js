@@ -18,7 +18,7 @@ const multiplesOfThree = () => {
 
     }
 }
-console.log(multiplesOfThree());
+//console.log(multiplesOfThree());
 
 
 
@@ -35,9 +35,16 @@ const untilNum = (num) => {
         console.log(i)
     }
 }
-console.log(untilNum(5));
-console.log(untilNum(9));
-console.log(untilNum(42));
+//console.log(untilNum(5));
+//console.log(untilNum(9));
+//console.log(untilNum(42));
 
 
-a
+const multiply = (num1, num2) => {
+    let multiply = num1 * num2;
+    return multiply
+}
+
+console.log(multiply(2, 4))     //returns 8
+console.log(multiply(10, -5))   //returns -50
+console.log(multiply(3, 7.5))  //returns 22.5
