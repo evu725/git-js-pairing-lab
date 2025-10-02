@@ -80,3 +80,16 @@ const isNegative = (num) => {
 console.log(isNegative(3))         //returns false
 console.log(isNegative(-2))        //returns true
 console.log(isNegative(Math.PI))   //returns false
+
+
+//Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
+//triangleArea(5, 7)    //returns 17.5
+//triangleArea(6, 8)    //returns 24//
+
+const triangleArea = (height, base) => {
+    let area = (height * base) / 2
+    return area
+}
+
+console.log(triangleArea(5, 7))    //returns 17.5
+console.log(triangleArea(6, 8))    //returns 24
