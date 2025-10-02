@@ -93,3 +93,6 @@ const triangleArea = (height, base) => {
 
 console.log(triangleArea(5, 7))    //returns 17.5
 console.log(triangleArea(6, 8))    //returns 24
+
+
+
