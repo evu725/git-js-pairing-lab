@@ -77,9 +77,9 @@ const isNegative = (num) => {
     }
 }
 
-console.log(isNegative(3))         //returns false
-console.log(isNegative(-2))        //returns true
-console.log(isNegative(Math.PI))   //returns false
+//console.log(isNegative(3))         //returns false
+//console.log(isNegative(-2))        //returns true
+//console.log(isNegative(Math.PI))   //returns false
 
 
 //Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
@@ -91,5 +91,19 @@ const triangleArea = (height, base) => {
     return area
 }
 
-console.log(triangleArea(5, 7))    //returns 17.5
-console.log(triangleArea(6, 8))    //returns 24
+//console.log(triangleArea(5, 7))    //returns 17.5
+//console.log(triangleArea(6, 8))    //returns 24
+
+const betweenTwentyAndFourty = (num) => {
+    if (num > 20 && num < 40) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(betweenTwentyAndFourty(20))      //return false
+console.log(betweenTwentyAndFourty(21))     //return true
+console.log(betweenTwentyAndFourty(39))    //return true
+console.log(betweenTwentyAndFourty(40))   //return false
