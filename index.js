@@ -1,11 +1,11 @@
-//Code your solutions in this file
+// Problem 1
 const fiveToOneHundred = () => {
     for (let i = 5; i <= 100; i++) {
         console.log(i)
     }
 }
 
-
+// Problem 2
 //write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3
 //multiples of 3 are 3,6,9,12,15//
 
@@ -13,19 +13,23 @@ const multiplesOfThree = () => {
     for (let i = 3; i <= 100; i++) {
         if (i % 3 == 0)
             console.log(i)
-
-
-
     }
 }
 //console.log(multiplesOfThree());
 
+// Problem 3
+const multiplesOfThreeOrFive = () => {
+    for (let i = 1; i <= 100; i++) {
+        if (i % 3 == 0 || i % 5 == 0) {
+            console.log(i)
+        }
+    }
+}
+
+//console.log(multiplesOfThreeOrFive())
 
 
-
-
-
-
+// Problem 4
 //write a funtion untilNum that takes in an integer parameter and console logs all positive numbers from 1 to that integer
 // untilNum(5)    //prints out numbers 1 through 5
 // untilNum(9)    //prints out numbers 1 through 9
@@ -40,6 +44,7 @@ const untilNum = (num) => {
 //console.log(untilNum(42));
 
 
+// Problem 5
 const multiply = (num1, num2) => {
     let multiply = num1 * num2;
     return multiply
@@ -50,8 +55,7 @@ const multiply = (num1, num2) => {
 //console.log(multiply(3, 7.5))  //returns 22.5
 
 
-
-
+// Problem 6
 //write a function add that takes in two number parameters
 //  and returns their sum. But if the two values are the same, return triple their sum!
 //add(2, 4)     //returns 6
@@ -69,6 +73,7 @@ const add = (num1, num2) => {
 
 }
 
+// Problem 7
 const isNegative = (num) => {
     if (num < 0) {
         return true
@@ -82,6 +87,7 @@ const isNegative = (num) => {
 //console.log(isNegative(Math.PI))   //returns false
 
 
+// Problem 8
 //Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
 //triangleArea(5, 7)    //returns 17.5
 //triangleArea(6, 8)    //returns 24//
@@ -94,6 +100,7 @@ const triangleArea = (height, base) => {
 //console.log(triangleArea(5, 7))    //returns 17.5
 //console.log(triangleArea(6, 8))    //returns 24
 
+// Problem 9
 const betweenTwentyAndFourty = (num) => {
     if (num > 20 && num < 40) {
         return true
@@ -109,18 +116,14 @@ console.log(betweenTwentyAndFourty(39))    //return true
 console.log(betweenTwentyAndFourty(40))   //return false
 
 
-
-
-
-
-
+// Problem 10
 const largest = (num1, num2, num3) => {
-    let max; 
+    let max;
 
     // compare num 1 to num2 
-    if (num1> num2) { 
+    if (num1 > num2) {
         // num1 is max number
-        max = num1; 
+        max = num1;
     } else { // b is greater than a
         // num2 is the maximum number
         max = num2;
@@ -128,13 +131,13 @@ const largest = (num1, num2, num3) => {
 
     // num3 greater than max value
     if (num3 > max) {
-// num3 is greater than the max
+        // num3 is greater than the max
         max = num3;
     }
 
     return max;
 
-    
+
 }
 
 console.log(largest(4, 6, 8));        // 8
