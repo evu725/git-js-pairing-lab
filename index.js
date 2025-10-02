@@ -77,9 +77,9 @@ const isNegative = (num) => {
     }
 }
 
-console.log(isNegative(3))         //returns false
-console.log(isNegative(-2))        //returns true
-console.log(isNegative(Math.PI))   //returns false
+//console.log(isNegative(3))         //returns false
+//console.log(isNegative(-2))        //returns true
+//console.log(isNegative(Math.PI))   //returns false
 
 
 //Write a function triangleArea that takes in the height and base of a triangle and returns the area of the triangle.
@@ -91,8 +91,52 @@ const triangleArea = (height, base) => {
     return area
 }
 
-console.log(triangleArea(5, 7))    //returns 17.5
-console.log(triangleArea(6, 8))    //returns 24
+//console.log(triangleArea(5, 7))    //returns 17.5
+//console.log(triangleArea(6, 8))    //returns 24
+
+const betweenTwentyAndFourty = (num) => {
+    if (num > 20 && num < 40) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+console.log(betweenTwentyAndFourty(20))      //return false
+console.log(betweenTwentyAndFourty(21))     //return true
+console.log(betweenTwentyAndFourty(39))    //return true
+console.log(betweenTwentyAndFourty(40))   //return false
 
 
 
+
+
+
+
+const largest = (num1, num2, num3) => {
+    let max; 
+
+    // compare num 1 to num2 
+    if (num1> num2) { 
+        // num1 is max number
+        max = num1; 
+    } else { // b is greater than a
+        // num2 is the maximum number
+        max = num2;
+    }
+
+    // num3 greater than max value
+    if (num3 > max) {
+// num3 is greater than the max
+        max = num3;
+    }
+
+    return max;
+
+    
+}
+
+console.log(largest(4, 6, 8));        // 8
+console.log(largest(30, 22, 17));     // 30
+console.log(largest(41, 108, 86));    // 108
