@@ -143,3 +143,68 @@ const largest = (num1, num2, num3) => {
 console.log(largest(4, 6, 8));        // 8
 console.log(largest(30, 22, 17));     // 30
 console.log(largest(41, 108, 86));    // 108
+
+// Problem 14
+const absoluteNineteen = num => {
+    abs_difference = Math.abs(num - 19);
+    if (num > 19) {
+        return abs_difference * 3;
+    }
+    return abs_difference;
+};
+
+console.log(absoluteNineteen(10));      // return 9
+console.log(absoluteNineteen(0))        // return 19
+console.log(absoluteNineteen(-5))       // return 24
+console.log(absoluteNineteen(15.5))     // return 3.5
+console.log(absoluteNineteen(30));      // return 33
+console.log(absoluteNineteen(100))      // return 243
+console.log('-------------')
+
+// Problem 15
+const switchLetters = str => {
+    if (str === '') {
+        return str;
+    }
+
+    if (str.length < 2) {
+        return str;
+    }
+
+    let firstChar = str[0];
+    let lastChar = str[str.length - 1];
+    let middleChar = str.slice(1, -1);
+
+    let newString = lastChar + middleChar + firstChar;
+
+    return newString;
+};
+
+console.log(switchLetters('anne')); //return "enna"
+console.log(switchLetters('hello world')); //return "dello worlh"
+console.log(switchLetters('a')); //return "a"
+console.log(switchLetters('')); //return ""
+console.log('-------------')
+
+// Problem 16
+function changeString(str) {
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    const nextAlphabet = 'bcdefghijklmnopqrstuvwxyza';
+    let result = '';
+
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        let index = alphabet.indexOf(char);
+
+        if (index !== -1) {
+            result += nextAlphabet[index];
+        } else {
+            result += char;
+        }
+    }
+    return result;
+}
+
+console.log(changeString("abc"))             //return "bcd"
+console.log(changeString("helloworld"))      //return "ifmmpxpsme"
+console.log('-------------')
