@@ -143,3 +143,73 @@ const largest = (num1, num2, num3) => {
 console.log(largest(4, 6, 8));        // 8
 console.log(largest(30, 22, 17));     // 30
 console.log(largest(41, 108, 86));    // 108
+
+
+
+
+
+
+// 11
+// Write a function printTime that prints out the current time in the format HH:MM:ss. Do not hard code the hour, minute, or seconds values.
+const printTime = () => { //function to print current time in HH:MM:ss format
+    let date = new Date(); 
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds(); //get current hours, minutes, seconds
+
+    //format to ensure two digits
+    if (hours < 10) { //if hours is less than 10, add a leading zero
+        hours = '0' + hours; //string concatenation
+    }
+    if (minutes < 10) { //if minutes is less than 10, add a leading zero
+        minutes = '0' + minutes; //string concatenation
+    }
+    if (seconds < 10) { //if seconds is less than 10, add a leading zero
+        seconds = '0' + seconds; 
+    }
+
+    console.log(`${hours}:${minutes}:${seconds}`);
+}
+
+printTime(); // prints current time in HH:MM:ss format 
+
+
+
+// Problem 12
+// Write a function isLeapYear to determine whether a given year is a leap year in the Gregorian calendar.
+
+// isLeapYear(2000)    //returns true
+// isLeapYear(1900)    //returns false
+// isLeapYear(2020)    //returns true
+// isLeapYear(1999)    //returns false
+const isLeapYear = (year) => {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) { //divisible by 4 and not divisible by 100 OR divisible by 400
+        return true;
+    } else {
+        return false; //not a leap year
+    }
+}
+
+console.log(isLeapYear(2000))    //returns true
+console.log(isLeapYear(1900))    //returns false
+console.log(isLeapYear(2020))    //returns true
+console.log(isLeapYear(1999))    //returns false
+
+
+
+
+
+// Problem 13
+// Write a function getExtention to get the extension of a filename.
+getExtention("hello.txt")     //returns ".txt"
+getExtention("app.js")        //returns ".js"
+getExtention("README.md")     //returns ".md"
+const getExtention = (filename) => {
+    let extention = filename.slice(filename.lastIndexOf('.'));
+    return extention;
+} 
+
+console.log(getExtention("hello.txt"))     //returns ".txt" 
+console.log(getExtention("app.js"))        //returns ".js" 
+console.log(getExtention("README.md"))     //returns ".md"  //returns ".md" 
+
