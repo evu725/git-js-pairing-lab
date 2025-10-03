@@ -145,7 +145,7 @@ console.log(largest(30, 22, 17));     // 30
 console.log(largest(41, 108, 86));    // 108
 
 // Problem 14
-const absoluteNineteen = num => {
+const absoluteNineteen = (num) => {
     abs_difference = Math.abs(num - 19);
     if (num > 19) {
         return abs_difference * 3;
@@ -162,7 +162,7 @@ console.log(absoluteNineteen(100))      // return 243
 console.log('-------------')
 
 // Problem 15
-const switchLetters = str => {
+const switchLetters = (str) => {
     if (str === '') {
         return str;
     }
@@ -187,7 +187,7 @@ console.log(switchLetters('')); //return ""
 console.log('-------------')
 
 // Problem 16
-function changeString(str) {
+const changeString = (str) => {
     const alphabet = 'abcdefghijklmnopqrstuvwxyz';
     const nextAlphabet = 'bcdefghijklmnopqrstuvwxyza';
     let result = '';
